@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Kullanılacak Veritabanı Sürücüsünün Adı       -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!--  ConnectionString       -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/YarismaDB</property>
+        <!--  Kullanıcı Adı , yetkili kullanıcı      -->
+        <property name="hibernate.connection.username">postgres</property>
+     
+        <property name="hibernate.connection.password">2020</property>
+      <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+       
+       <property name="connection.autocommit">true</property>
+       
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+       
+        
+
+    </session-factory>
+</hibernate-configuration>
